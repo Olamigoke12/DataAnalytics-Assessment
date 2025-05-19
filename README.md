@@ -8,7 +8,7 @@
 
 **Objective** : *Identify Customers that are have both Savings `and` Investment products for cross selling Opportunity*
 
-**Join logic** : *I started with getting the **Users** then `Join` them to thier respective **Plans** and `Join` the **Savings** transactions( Some plans might not have savings transactions)*
+**Join logic** : *I started with getting the **Users** then `Join` them to their respective **Plans** and `Join` the **Savings** transactions( Some plans might not have savings transactions)*
 
 **Filtering using Having Clause** : *I used `Having` clause because Saving_count and investment_count are aggregates and cant be filtered using `Where` clause.*
 
@@ -112,7 +112,7 @@ CTE: `final_summary`
 Use:
 `ORDER BY FIELD(frequency_category, 'High Frequency', 'Medium Frequency', 'Low Frequency')`
 to ensure the logical order in output.
-#### Sumarry 
+#### Summary:  
  *I Calculated each `User's total transactions` and `account activities duration` in months. Then Calculated `monthly frequency` and Categorize each User, grouped Users by category and calculated total count and average frequency*
              
   *To ensure users with transactions in the same monthare still counted as active over 1 month, hence the use of #+1# in `TIMESTAMPDIFF`*
