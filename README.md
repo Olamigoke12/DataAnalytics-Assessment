@@ -167,9 +167,9 @@ Return:
 
 **Why CTE?**  : *Isolating logic to get last inflow per plan, while keeping the main query cleaner.*
 
-**Left Join Usage :  To ensure i still get the plan infomation even if there are no matching transactions( incase i later remove `IS NOT NULL`)
+**Left Join Usage** :  To ensure i still get the plan infomation even if there are no matching transactions( incase i later remove `IS NOT NULL`)
 
-`**DATEDIFF**` : *A simple but powerful way to calculate duration from the last inflow date.*
+**`DATEDIFF`** : *A simple but powerful way to calculate duration from the last inflow date.*
 
 
 ## 4. Customer Lifetime Value (CLV) Estimation.
